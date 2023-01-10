@@ -1,0 +1,87 @@
+.cardwrapper{
+    display: flex;
+    gap: 20px;
+
+}
+.rental, .renta2{
+    width: 100%;
+    height: 300px;
+}
+
+.rental{
+    background-image: url(../assets/left.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.renta2{
+    background-image: url(../assets/rigth.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.cardwrap{
+    padding-left: 30px;
+    width: 230px;
+}
+
+.rental h2, .renta2 h2{
+    color: white;
+    padding-top: 20px;
+}
+
+.rental h4, .renta2 h4{
+    color: white;
+    line-height: 20px;
+    font-weight: 100;
+    
+}
+
+.card_btn1, .card_btn2{
+    background-color: #3563E9;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 44px;
+    border-radius: 2pc solid #3563E9;
+
+}
+
+.card_btn2{
+    background-color: #54A6FF;
+    border-radius: 2pc solid #54A6FF;
+
+}
+
+.card_btn1, .card_btn2{
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.card_btn1:hover, .card_btn2:hover{
+    background-color: blue;
+}
+
+@media (max-width:  48rem) {
+    .cardwrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:  500px) {
+    .rental{
+        margin-top: 2rem;
+        width: 30rem;
+        height: 220px;
+        font-size: .6rem;
+    }
+
+    .renta2{
+        display: none;
+    }
+    
+}

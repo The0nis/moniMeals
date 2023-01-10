@@ -1,0 +1,34 @@
+.header{
+    width: calc(100vw - 40px);
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.btn button {
+    background-color: #3563E9;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: 2pc;
+    cursor: pointer;
+    animation: all .4s ease-in-out;
+}
+
+.headertxt{
+    position: absolute;
+    right: 45px;
+    color: #24282d;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+
+    .headertxt{
+        right: -10rem;
+    }
+}

@@ -1,0 +1,280 @@
+.car_detail{
+    display: flex;
+    gap: 2rem;
+}
+.detail_wrapper{
+    width: 75%;
+}
+
+.details_one{
+    width: 100%;
+    background-size: contain;
+    background-position:  left;
+    border-radius: 10px;
+    color: white;
+}
+.detail_titles{
+    padding-left: 2rem;
+}
+.details_one h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 80%;
+    padding-top: 1rem;
+    
+
+}
+
+.details_one p{
+    width: 61%;
+    text-align: justify;
+    font-size: .8rem;
+    margin-top: -1rem;
+    /* margin-bottom: 1rem; */
+    padding-bottom: 5rem;
+
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+}
+.brand_content{
+    transition: all   300ms ease-in-out;
+}
+.brand_content img{
+    width: 100%;
+    max-height: 6rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    padding-bottom: -3rem;
+}
+.brand_content:hover{
+    border-radius: 10px;
+    border: 2px solid blue;
+    margin: 0 auto;
+}
+
+.brand_content img:hover{
+   padding-left: 5px;
+   padding-top: 5px;
+   width: 90%;
+   height: 5rem;
+}
+
+.detail_two{
+    width: 100%;
+    margin-top: 1rem;
+}
+/* .headwrap, .wrap{
+    display: flex;
+    flex-direction: column;
+} */
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.detail_two div h4{
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.star_wrapper{
+    display: flex;
+    gap: 1rem;
+    margin-top: -1rem;
+}
+
+.star_icon{
+    color: #FBAD39;
+    font-weight: 2rem;
+}
+
+.star_icon_change{
+    color: white;
+}
+.make_gray{
+    color: #596780;;
+}
+
+.description{
+    color: #596780;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8rem;
+
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -1.5rem;
+}
+
+.categories div{
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+    margin-bottom: -1.5rem;
+}
+
+.categories div  p{
+    color: #90A3BF;
+    font-weight: 500;
+}
+.categories div p span{
+    color: #596780;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+.price h4{
+    font-size: 1.5rem;
+}
+
+.price h4 span{
+    font-size: .6rem;
+    color: #3563E9;;
+    font-weight: 700;
+}
+
+.price h6{
+    margin-top: -2rem;
+    color: #3563E9;;
+}
+
+.btn{
+    background-color: #3563E9;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+   transition: all .4s ease-in-out;
+}
+
+.btn:hover{
+    background-color: rgb(20, 186, 246);
+} 
+
+/* styliing  for review component */
+.client_review{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 1rem;
+}
+.client_review span{
+    background-color: #3563E9;
+    color: white;
+    text-align: center;
+    width: 2rem;
+}
+
+.client_sectiona{
+    display: flex;
+    gap: .5rem;
+    margin-top: -1rem;
+}
+.client_image{
+    margin-top: 1.2rem;
+}
+.client_image img{
+    width: 80%;
+}
+.client_detail h4{
+    margin-bottom: -1rem;
+}
+
+.client_detail h5{
+    color: #3563E9;;
+}
+
+.client_date_rate{
+    flex: 2;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ .client_date_rate h4{
+   color: #3563E9;
+   font-size: .9rem;
+   font-weight: 300;
+ }
+
+ .star_wrap{
+    margin-top: -1rem;
+ }
+ .lines{
+    background-color: #3563E9;
+ }
+
+ .client_feedback{
+    margin-top: -1.5rem;
+ }
+
+ .client_feedback p{
+    text-align: justify;
+ }
+
+ .more{
+    cursor: pointer;
+    color: #3563E9;
+    display: flex;
+    gap: .5rem;
+    justify-self: center;
+    justify-content: center;
+    align-items: baseline;
+ }
+
+ .more span{
+    color: #596780;
+    font-size: 1rem;
+ }
+/* end of review component */
+
+@media (max-width: 64rem) {
+    .car_detail{
+        flex-direction: column;
+    }
+    .detail_wrapper{
+        width: 70%;
+    }
+    .brand{
+        gap: 2rem;
+    }
+    
+}
+
+@media (max-width: 48rem) {
+    .detail_wrapper{
+        width: 100%;
+    }
+    .categories div{
+        gap: 1rem;
+    }
+    
+}
+
+@media (max-width: 370px) {
+    .categories{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        width: 6rem;
+    }
+}
+

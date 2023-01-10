@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Category from './components/Category/Category';
+import DetailRent from './components/Detail/DetailRent';
+import Header from './components/Header';
 
 function App() {
+  // const [text, setText] = useState('Michael');
+  // const [showHomepage, setShowHomepage] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <p>{text}</p>
+      {showHomepage && <p>Welcome to my home page</p>}
+      <button onClick={() => setShowHomepage(true)}>Change Me</button> */}
+
+      {/* <Header /> */}
+      {/* <Category/> */}
+      <DetailRent/>
     </div>
   );
 }

@@ -1,0 +1,289 @@
+.headwrap{
+    margin-top: -3px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+.wrap{
+    width: calc(100vw - 50px);
+    padding: 0 20px;
+}
+.head{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    padding-right: -30px;
+    align-items: center;
+    position: fixed;
+    gap: 4rem;
+    margin-top: -1rem;
+    padding-left: .5rem;
+
+    background-color: white;
+    z-index: 4;
+}
+.logo{
+    color: blue;
+    cursor: pointer;
+    padding-left: 30px;
+    transition: all 1s ease-in;
+
+}
+
+.logo:hover{
+    color: #6c7fe9f3;
+    transform: skewX(12deg);
+}
+
+.field{
+    width: 30%;
+    position: absolute;
+}
+
+.iconleft{
+    border: 1px solid black;
+    position: relative;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+
+    
+}
+.favorite{
+    cursor: pointer;
+    transition: all  .4s ease;
+    font-size: 1.5rem;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    position: absolute;
+    right: 60px;
+}
+
+.icon{
+   font-size: 1.2rem;
+   cursor: pointer;
+   transition: all .4s ease-in-out;
+
+}
+
+.icon:hover{
+    transform: scaleY(2);
+    color: blue;
+}
+
+.rentme{
+    padding-top: 10%;
+}
+
+.contentheader{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contpopular{
+    color: #90A3BF;
+    padding: 0 20px;
+}
+
+.contview{
+    position: absolute;
+    color: #3563E9;
+    right: 40px;
+    cursor: pointer;
+}
+
+.contview h5 a{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.contview h5 a:hover{
+   color: #eff1f7;
+}
+
+/* main content style goe here */
+
+
+.contmain{
+    /* height: 17rem; */
+    background-color: white;
+    border-radius: 10px;
+    /* z-index: -4; */
+}
+
+.contsub{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+}
+
+.subone{
+    display: flex;
+    position: relative;;
+    margin-bottom: 20px;
+}
+
+.subonea h5{
+    margin-bottom: -20px;
+    padding-left: 1rem;
+}
+
+
+.subtext{
+    color: #90A3BF;
+}
+
+.suboneb{
+    position: absolute;
+    right: 10px;
+    top: 1.6rem;
+}
+
+.subtwo{
+    display: flex;
+    justify-content: center;
+}
+
+.subtwo img{
+    width: 70%;
+    height: 100px;
+}
+
+.subthree{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-around;
+}
+
+.subthree div{
+    cursor: pointer;
+    display: flex;
+    justify-content: baseline;
+    align-content: center;
+}
+
+.subthree div span{
+    padding-left: 5px;
+}
+
+.conticon{
+    font-size: 1.2rem;
+}
+
+.subfour  {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+}
+
+.subfoura{
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.subfourb{
+    position: absolute;
+    right: 1.5rem;
+}
+
+.textbold{
+    font-weight: 700;
+}
+
+
+.subfourb button{
+    background-color: #3563E9;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+   transition: all .4s ease-in-out;
+}
+
+.sub_btn{
+    background-color: #3563E9;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+   transition: all .4s ease-in-out;
+}
+
+.sub_btn:hover{
+    background-color: rgb(20, 186, 246);
+} 
+
+.subfourb button:hover{
+    background-color: rgb(20, 186, 246);
+}
+
+@media (max-width:48rem) {
+
+    .search{
+        display: none;
+    }
+    .head{
+        position: fixed;
+        margin-bottom: 1rem;
+    }
+
+    .subthree{
+        gap: 0rem;
+    }
+
+    .removeme{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .head{
+        position: fixed;
+        right: 0;
+        font-size: .5rem;
+
+    }
+
+    .contentheader{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contview{
+        right: -10rem;
+    }
+
+    .removeme{
+        display: block;
+    }
+
+
+
+    
+}
+
+/* @media (max-width: 300px) {
+
+    .head{
+        position: fixed;
+        right: 0;
+        font-size: .5rem;
+
+    }
+
+
+
+    
+} */

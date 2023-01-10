@@ -1,0 +1,105 @@
+.subHeader {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+
+
+.header{
+    color: blue;
+    padding-top: 10px;
+}
+
+.nowdate{
+    height: 1.6rem;
+}
+
+.select{
+    height: 1.5rem;
+}
+
+.header label{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+.subContent {
+    display: flex;
+    gap: 2rem;
+}
+
+.subs{
+    border-right: 2px solid rgb(231, 226, 226);
+    align-content: center;
+    padding-right: 1rem;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 64rem) {
+    .subContent{
+        width: 100%;
+        gap: 2rem;
+        padding-right: 5rem;
+        flex-direction: row;
+    }
+
+    .select, .subs input, .nowTie input{
+        width: 10rem;
+        margin-bottom: .5rem;
+    }
+    .nowTie{
+        padding-bottom: 1rem;
+    }
+
+    .subHeader {
+        width: 90%;
+        
+    }
+
+}
+
+@media (max-width: 48rem) {
+
+    .subContent{
+        /* width: fit-content; */
+        gap: 1.2rem;
+        padding-right: 5rem;
+        flex: 1;
+    }
+
+    .select, .subs input, .nowTie input{
+        width: 20vw;
+    }
+    .subHeader {
+        width: 85vw;
+        background-color: white;
+        border-radius: 10px;
+        
+    }
+
+
+    
+}
+
+@media (max-width: 500px) {
+    .subContent{
+        /* width: fit-content; */
+        flex-direction: column;
+    }
+
+    .subHeader {
+        width: 25rem;
+    }
+    .select, .subs input, .nowTie input{
+        width: 20rem;
+    }
+
+}
